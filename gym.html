@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="estyles.css">
+    <script src="scripts.js" defer></script>
+    <title>Gimnasio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header>
+                    <h1 class="titulo">Gimnasio desconocido</h1>
+                </header>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+                <main>
+                    <form name="reserveForm">
+                        <fieldset>
+                            <legend>Reserva de clases</legend>
+                            <label for="subscriberName">
+                                <input type="text" name="subscriberName" id="subscriberName" placeholder="Enter name">
+                            </label>
+                            <label for="option" class="select d-block">
+                                <select name="option" id="option">
+                                    <option value="selectOption">seleccione una clase</option>
+                                    <option value="bodyCombat">Body combat</option>
+                                    <option value="yoga">Yoga</option>
+                                    <option value="pilates">Pilates</option>
+                                    <option value="core">Core</option>
+                                </select><span></span>
+                            </label>
+                            <label for="date">
+                                <input type="date" name="date" id="date"><span id="messageSubmit"></span>
+                            </label>
+
+                            <button type="submit" name="reserve" class="button d-block">Reservar</button>
+                            <span class="d-flex pt-3"></span>
+                        </fieldset>
+                    </form>
+                </main> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <span id="cookieMessage" class="pt-3 d-flex text-align-center justify-content-center"></span>
+                </footer> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
